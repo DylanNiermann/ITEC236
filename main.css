@@ -1,109 +1,26 @@
-.glitch
-  {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    background: url(https://images.unsplash.com/photo-1494959764136-6be9eb3c261e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80);
-    background-size: cover;
-  }
-
-.glitch:before
-  {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: url(https://images.unsplash.com/photo-1494959764136-6be9eb3c261e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80);
-    background-size: cover; /* contain for split effect */
-    opacity: .5;
-    mix-blend-mode: hard-light;
-    animation: glitch2 10s linear infinite;
-  }
-
-.glitch:hover:before
-{
-  animation: glitch1 1s linear infinite;
+h2 {
+  padding: 20px;
+  width: 160px;
+  border: Spx double blue;
+  color: blue;
+  font-size: 200%;
+  text-align: center;
+  font-weight: bold;
+  border-radius: lOpx 20px O 20px;
+  box-shadow: 3px 3px 4px 4px rgb(76, 0, 255); 
 }
 
-@keyframes glitch1
-{
-  0%
-  {
-    background-position: 0 0;
-    filter: hue-rotate(0deg);
-  }
-  10%
-  {
-    background-position: 5px 0;
-  }
-  20%
-  {
-    background-position: -5px 0;
-  }
-  30%
-  {
-    background-position: 15px 0;
-  }
-  40%
-  {
-    background-position: -5px 0;
-  }
-  50%
-  {
-    background-position: -25px 0;
-  }
-  60%
-  {
-    background-position: -50px 0;
-  }
-  70%
-  {
-    background-position: 0 -20px;
-  }
-  80%
-  {
-    background-position: -60px -20px;
-  }
-  81%
-  {
-    background-position: 0 0;
-  }
-  100%
-  {
-    background-position: 0 0;
-    filter: hue-rotate(360deg);
-  }
+Img {
+  border-radius: 15px;
 }
 
-@keyframes glitch2
-{
-  0%
-  {
-    background-position: 0 0;
-    filter: hue-rotate(0deg);
-  }
-  10%
-  {
-    background-position: 15px 0;
-  }
-  15%
-  {
-    background-position: -15px 0;
-  }
-  20%
-  {
-    filter: hue-rotate(360deg);
-  }
-  25%
-  {
-    background-position: 0 0;
-    filter: hue-rotate(0deg);
-  }
-  100%
-  {
-    background-position: 0 0;
-    filter: hue-rotate(0deg);
-  }
+
+.colum {
+  float: left;
+  width: 50%;
+}
+.rowafter {
+  content: "";
+  display: table;
+  clear: both;
 }
