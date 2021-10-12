@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <!-- Dylan Niermann, Southern Illinois University Carbondale, 9/23/2021, 9/23/2021 -->
 <link rel="stylesheet" type="text/css" href="main.css" />
+<link rel="stylesheet" href="slicknav.css">
 <head>
     <title>Rentals Page</title> 
     </head>
@@ -23,7 +24,14 @@
     			</li>         
     		</ul>
     	</nav>
+        <div class="figure">
+            <img class="image-main" src="images/mainhover.jpg" srcset="images/mainhover.jpg" alt="Main Image">
+            <img class="image-hover" src="images/althover.jpg" srcset="images/althover.jpg" alt="Alt Image">
+          </div>
         <header>
             <h1>Rentals Page</h1> 
         </header>
     </body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="jquery.slicknav.min.js"></script>"
+    <script> $("#nav_menu").slicknav(); </script>

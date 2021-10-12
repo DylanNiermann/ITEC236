@@ -24,15 +24,17 @@ h6 {
     box-shadow: 3px 3px 4px 4px rgb(76, 0, 255); 
   }
   
-  #rcorners1 {
+.rcorners1 {
     border-radius: 25px;
     background: #3621ad;
     padding: 20px; 
-    width: 200px;
-    height: 150px;  
+    width: 750px;
+    height: 350px; 
+    -webkit-filter: blur(250px);
+    filter: blur(5px); 
   }
   
-  #rcorners2 {
+.rcorners2 {
     border-radius: 25px;
     border: 2px solid #73AD21;
     padding: 20px; 
@@ -65,7 +67,8 @@ h6 {
     width: 50%;
   }
 
-  img {
+  .imgblur
+  {
     -webkit-filter: blur(250px);
     filter: blur(5px);
   }
@@ -73,7 +76,7 @@ h6 {
 /* Image Formatting */
   .image1
 {
-width:200px;
+width:150px;
 height:200px;
 }
 .image2
@@ -166,4 +169,26 @@ height:300px;
     .slicknav_menu {
       display: block;
     }
+}
+
+
+/*
+  Rollover Image stuff for the hover image
+ */
+.figure {
+    position: relative;
+    max-width: 100%;
+}
+.figure img.image-hover {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  object-fit: contain;
+  opacity: 0;
+  transition: opacity .2s;
+}
+.figure:hover img.image-hover {
+  opacity: 1;
 }
